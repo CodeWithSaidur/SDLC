@@ -22,6 +22,7 @@ export const EntrepreneurWorkspace = () => {
     const [version, setVersion] = useState(1);
 
     const editor = useEditor({
+        immediatelyRender: false,
         extensions: [
             StarterKit,
             Placeholder.configure({

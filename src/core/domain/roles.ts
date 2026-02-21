@@ -7,7 +7,9 @@ export type UserRole =
     | "FULLSTACK_DEVELOPER"
     | "SOFTWARE_TESTER"
     | "DEVOPS_ENGINEER"
-    | "MONITORING";
+    | "MONITORING"
+    | "LIVE"
+    | "UNIFIED_ENGINE";
 
 export interface WorkspaceTab {
     id: UserRole;
@@ -16,13 +18,15 @@ export interface WorkspaceTab {
 }
 
 export const WORKSPACE_TABS: WorkspaceTab[] = [
-    { id: "ENTREPRENEUR", label: "Entrepreneur", icon: "Lightbulb" },
-    { id: "BUSINESS_ANALYST", label: "Business Analyst", icon: "FileText" },
-    { id: "SOFTWARE_ARCHITECT", label: "Software Architect", icon: "PenTool" },
-    { id: "DATA_ARCHITECT", label: "Data Architect", icon: "Database" },
-    { id: "UIUX_DESIGNER", label: "UI/UX Designer", icon: "Palette" },
-    { id: "FULLSTACK_DEVELOPER", label: "Developer", icon: "Code" },
-    { id: "SOFTWARE_TESTER", label: "Tester", icon: "ShieldCheck" },
-    { id: "DEVOPS_ENGINEER", label: "DevOps", icon: "Terminal" },
+    { id: "UNIFIED_ENGINE", label: "SDLC Engine", icon: "Zap" },
+    { id: "ENTREPRENEUR", label: "Ideation", icon: "Lightbulb" },
+    { id: "BUSINESS_ANALYST", label: "Requirements", icon: "FileText" },
+    { id: "UIUX_DESIGNER", label: "Design", icon: "Palette" },
+    { id: "SOFTWARE_ARCHITECT", label: "Architecture", icon: "PenTool" },
+    { id: "DATA_ARCHITECT", label: "Database", icon: "Database" },
+    { id: "FULLSTACK_DEVELOPER", label: "Development", icon: "Code" },
+    { id: "SOFTWARE_TESTER", label: "Testing & QA", icon: "ShieldCheck" },
+    { id: "DEVOPS_ENGINEER", label: "Deployment", icon: "Terminal" },
     { id: "MONITORING", label: "Monitoring", icon: "Activity" },
+    { id: "LIVE", label: "Live Pulse", icon: "Radio" },
 ];

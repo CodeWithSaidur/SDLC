@@ -12,7 +12,9 @@ import {
     Code,
     ShieldCheck,
     Terminal,
-    Activity
+    Activity,
+    Radio,
+    Zap
 } from "lucide-react";
 
 const iconMap = {
@@ -25,6 +27,8 @@ const iconMap = {
     ShieldCheck,
     Terminal,
     Activity,
+    Radio,
+    Zap,
 };
 
 interface RoleSwitcherProps {
